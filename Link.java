@@ -16,6 +16,7 @@ public class Link {
 				this.next.print();
 			}
 		}
+		
 		//添加节点方法
 		public void add(Node newNode) {
 			if(this.next != null) {
@@ -50,13 +51,16 @@ public class Link {
 		}
 
 	}
+	
 	private Node root;
+	
 	//外部的打印链表
 	public void printNode() {
 		if(this.root != null) {
 			this.root.print();
 		}
 	}
+	
 	//添加节点
 	public void addNode(String data) {
 		Node newNode =new Node(data);
@@ -66,10 +70,12 @@ public class Link {
 			this.root.add(newNode);
 		}
 	}
+	
 	//查找元素是否存在
 	public boolean contains(String data) {
 		return this.root.search(data);
 	}
+	
 	//删除节点
 	public void deleteNode(String data) {
 		
@@ -83,4 +89,5 @@ public class Link {
 			}
 		}
 	}
+	
 }
